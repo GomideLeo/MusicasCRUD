@@ -1,5 +1,8 @@
 package maven.crud;
-import java.util.*;
+import java.util.Scanner;
+
+import maven.dao.MusicDAO;
+import maven.model.Musica;
 
 public class Principal {
 	public static Scanner sc = new Scanner(System.in);
@@ -46,7 +49,7 @@ public class Principal {
 	
 	public static void main(String[] args) {
 		
-		DAO dao = new DAO();
+		MusicDAO dao = new MusicDAO();
 		dao.conectar();
 		
 		int option = 0;
